@@ -18,7 +18,8 @@ $stokbarang = query("SELECT * FROM barang");
 </head>
 <body>
     <h1>Stok barang</h1>
-    
+    <a href="tambah.php">Tambah Data Stok</a>
+    <br> </br>
     <table border="1" cellpadding="10" cellpacing="0">
         <tr>
             <th>No.</th>
@@ -37,8 +38,8 @@ $stokbarang = query("SELECT * FROM barang");
          <tr>
              <td><?= $i?></td>
              <td>
-                 <a href="">ubah</a>
-                 <a href="">hapus</a>
+                 <a href="">ubah</a> | 
+                 <a href="hapus.php?id=<?= $row['id']; ?>">hapus</a>
              </td> 
              <td>
                  <img src="img/<?= $row['gambar']?>" width="50">
