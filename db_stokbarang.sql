@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2022 at 04:53 PM
+-- Generation Time: Apr 07, 2022 at 03:41 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `barang` (
-  `Id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `code` varchar(20) NOT NULL,
   `name` varchar(100) NOT NULL,
   `quantity` decimal(10,0) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `barang` (
 -- Dumping data for table `barang`
 --
 
-INSERT INTO `barang` (`Id`, `code`, `name`, `quantity`, `gambar`) VALUES
+INSERT INTO `barang` (`id`, `code`, `name`, `quantity`, `gambar`) VALUES
 (1, '87204378391', 'Beras Mentari 5KG', '30', 'berasmentari.jpg'),
 (5, '65487874212', 'Pepsodent', '15', 'pepsodent.jpg');
 
@@ -51,7 +51,7 @@ INSERT INTO `barang` (`Id`, `code`, `name`, `quantity`, `gambar`) VALUES
 -- Indexes for table `barang`
 --
 ALTER TABLE `barang`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -61,7 +61,7 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
